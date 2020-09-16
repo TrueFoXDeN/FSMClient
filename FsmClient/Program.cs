@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 
 namespace FsmClient
 {
@@ -13,8 +14,29 @@ namespace FsmClient
         {
             ipAddressString = Console.ReadLine();
             LoopConnect();
+            SendLoop();
             Console.ReadKey();
         }
+
+        private static void SendLoop()
+        {
+            while (true)
+            {
+                Console.Write("Enter a request: ");
+                string req = Console.ReadLine();
+                byte[] buffer = Encoding.ASCII.GetBytes(req);
+                _clientSocket.Send(buffer);
+
+                byte[] recBuffer = new byte[1024];
+               int rec = _clientSocket.Receive(recBuffer);
+                byte[] data = new byte[rec];
+                Array.Copy(recBuffer, data, rec);
+                Console.WriteLine("Received: " + Encoding.ASCII.GetString(data));
+
+            }
+
+        }
+
 
         private static void LoopConnect()
         {
@@ -22,19 +44,17 @@ namespace FsmClient
             int attempts = 0;
             while (!_clientSocket.Connected)
             {
-
                 try
                 {
                     attempts++;
-                    _clientSocket.Connect(new IPEndPoint(ipAddress, 0));
+                    _clientSocket.Connect(new IPEndPoint(ipAddress, 13000));
 
                 }
                 catch (SocketException e)
                 {
-                    Console.Clear();
+                   // Console.Clear();
                     Console.WriteLine(e);
                     Console.WriteLine("Attempt: " + attempts.ToString());
-
                 }
             }
 

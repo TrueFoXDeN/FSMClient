@@ -1,0 +1,13 @@
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.exe
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.deps.json
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.runtimeconfig.json
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.runtimeconfig.dev.json
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.dll
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\bin\Debug\netcoreapp3.1\FsmClient.pdb
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.csprojAssemblyReference.cache
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.AssemblyInfoInputs.cache
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.AssemblyInfo.cs
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.csproj.CoreCompileInputs.cache
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.dll
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.pdb
+C:\Users\Ctroi\source\repos\FsmClient\FsmClient\obj\Debug\netcoreapp3.1\FsmClient.genruntimeconfig.cache
